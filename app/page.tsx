@@ -3,6 +3,8 @@ import { prisma } from "./utils/db";
 import { Suspense } from "react";
 import CardLoading from "@/components/general/CardLoading";
 
+export const revalidate = 3000;
+
 export default async function Home() {
   return (
     <div className="py-6">
