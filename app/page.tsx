@@ -28,6 +28,9 @@ async function BlogPost() {
       createdAt: true,
       id: true,
     },
+    orderBy: {
+      createdAt: "desc",
+    },
   });
 
   return (
